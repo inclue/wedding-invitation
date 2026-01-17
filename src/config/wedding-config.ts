@@ -62,9 +62,9 @@ export const weddingConfig = {
     },
     parking: "건물 지하 주차장 이용 가능 (1시간 30분 무료)",
     // 신랑측 배차 안내
-    groomShuttle: {},
+    groomShuttle: null,
     // 신부측 배차 안내
-    brideShuttle: {},
+    brideShuttle: null,
   },
 
   // 갤러리
