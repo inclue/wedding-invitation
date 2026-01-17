@@ -31,7 +31,7 @@ export const weddingConfig = {
   // 소개글
   intro: {
     title: "",
-    text: "서로의 이름이\n가장 편안한 집이 되었습니다.\n\n같이 웃고, 같이 걷고,\n그렇게 평생을 약속하고자 합니다.\n\n따뜻한 축복의 자리\n함께해 주시면 감사하겠습니다."
+    text: "",
   },
 
   // 결혼식 일정
@@ -79,6 +79,23 @@ export const weddingConfig = {
       "/images/gallery/image9.jpg",
     ],
   } as GalleryConfig,
+
+  // 초대의 말씀
+  invitation: {
+    message: "서로의 이름이\n가장 편안한 집이 되었습니다.\n\n같이 웃고, 같이 걷고,\n그렇게 평생을 약속하고자 합니다.\n\n따뜻한 축복의 자리\n함께해 주시면 감사하겠습니다.",
+    groom: {
+      name: "박인서",
+      label: "장남",
+      father: "박승윤",
+      mother: "김미경",
+    },
+    bride: {
+      name: "여희원",
+      label: "장녀",
+      father: "여명석",
+      mother: "김명주",
+    },
+  },
 
   // 계좌번호
   account: {
