@@ -61,15 +61,11 @@ export const weddingConfig = {
       bus: "간선버스 - KT 강남지사 하차\n141(도봉산), 242(중랑, 신내역), 361(여의도)\n\n간선버스 - 한국기술센터.상록회관 하차\n146(상계동), 341(하남), 360(송파), 740(덕은동), N13(상계주공7단지), N61(양천)\n\n직행버스 및 급행버스\n1100(차산리), 1700(연대농장입구.도곡리), 2000(진벌리), 7007(광릉내), 8001(대성리), 9303(하남)",
     },
     parking: "건물 지하 주차장 이용 가능 (1시간 30분 무료)",
-    // 신랑측 배차 안내
-    groomShuttle: null,
-    // 신부측 배차 안내
-    brideShuttle: null,
   },
 
   // 갤러리
   gallery: {
-    layout: "scroll" as GalleryLayout, // "scroll" 또는 "grid" 선택
+    layout: "grid" as GalleryLayout, // "scroll" 또는 "grid" 선택
     position: "middle" as GalleryPosition, // "middle" (현재 위치) 또는 "bottom" (맨 하단) 선택
     images: [
       "/images/gallery/image1.jpg",
@@ -106,32 +102,32 @@ export const weddingConfig = {
     groom: {
       bank: "은행명",
       number: "123-456-789012",
-      holder: "신랑이름",
+      holder: "박인서",
     },
     bride: {
       bank: "은행명",
       number: "987-654-321098",
-      holder: "신부이름",
+      holder: "여희원",
     },
     groomFather: {
       bank: "은행명",
       number: "111-222-333444",
-      holder: "신랑아버지",
+      holder: "박승윤",
     },
     groomMother: {
       bank: "은행명",
       number: "555-666-777888",
-      holder: "신랑어머니",
+      holder: "김미경",
     },
     brideFather: {
       bank: "은행명",
       number: "999-000-111222",
-      holder: "신부아버지",
+      holder: "여명석",
     },
     brideMother: {
       bank: "은행명",
       number: "333-444-555666",
-      holder: "신부어머니",
+      holder: "김명주",
     }
   },
 
@@ -140,7 +136,7 @@ export const weddingConfig = {
     enabled: false, // RSVP 섹션 표시 여부
     showMealOption: false, // 식사 여부 입력 옵션 표시 여부
   },
-  
+
   // 슬랙 알림 설정
   slack: {
     webhookUrl: process.env.NEXT_PUBLIC_SLACK_WEBHOOK_URL || "",
