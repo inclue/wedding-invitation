@@ -30,17 +30,6 @@ const VenueSection = ({ bgColor = 'white' }: VenueSectionProps) => {
   const [mapLoaded, setMapLoaded] = useState(false);
   const [debugInfo, setDebugInfo] = useState<string>('');
   const [mapError, setMapError] = useState(false);
-  // 배차 안내 펼침/접기 상태 관리
-  const [expandedShuttle, setExpandedShuttle] = useState<'groom' | 'bride' | null>(null);
-  
-  // 배차 안내 펼침/접기 토글 함수
-  const toggleShuttle = (shuttle: 'groom' | 'bride') => {
-    if (expandedShuttle === shuttle) {
-      setExpandedShuttle(null);
-    } else {
-      setExpandedShuttle(shuttle);
-    }
-  };
   
   // 디버깅 정보 출력
   useEffect(() => {
@@ -254,7 +243,6 @@ const VenueSection = ({ bgColor = 'white' }: VenueSectionProps) => {
         <CardTitle>주차 안내</CardTitle>
         <TransportText>{weddingConfig.venue.parking}</TransportText>
       </ParkingCard>
-      )}
     </VenueSectionContainer>
   );
 };
@@ -433,10 +421,6 @@ const Card = styled.div`
 
 const TransportCard = styled(Card)``;
 const ParkingCard = styled(Card)``;
-const ShuttleCard = styled(Card)`
-  padding: 0;
-  overflow: hidden;
-`;
 
 const CardTitle = styled.h4`
   font-weight: 500;
@@ -459,85 +443,12 @@ const TransportText = styled.p`
   white-space: pre-line;
 `;
 
-const ShuttleInfo = styled.div`
-  margin-bottom: 1rem;
-  
-  &:last-child {
-    margin-bottom: 0;
-  }
-`;
-
-const ShuttleLabel = styled.p`
-  font-weight: 500;
-  font-size: 0.875rem;
-`;
-
-const ShuttleText = styled.p`
-  font-size: 0.875rem;
-  color: var(--text-medium);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-`;
-
-const ShuttleCallButton = styled.a`
-  background-color: var(--secondary-color);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 0.2rem 0.5rem;
-  font-size: 0.8rem;
-  text-decoration: none;
-  margin-left: 0.5rem;
-  position: relative;
-  overflow: hidden;
-  
-  &:active {
-    transform: translateY(1px);
-  }
-  
-  &:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 5px;
-    height: 5px;
-    background: rgba(255, 255, 255, 0.5);
-    opacity: 0;
-    border-radius: 100%;
-    transform: scale(1, 1) translate(-50%);
-    transform-origin: 50% 50%;
-  }
-  
-  &:active:after {
-    animation: ripple 0.6s ease-out;
-  }
-`;
-
-const ShuttleCardHeader = styled.div<{ $isExpanded: boolean }>`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem;
-  cursor: pointer;
-  border-bottom: ${props => props.$isExpanded ? '1px solid #eee' : 'none'};
-  
-  h4 {
-    margin: 0;
-  }
-`;
-
 const ExpandIcon = styled.span<{ $isExpanded: boolean }>`
   font-size: 1.5rem;
   line-height: 1;
   color: var(--secondary-color);
   transition: transform 0.3s ease;
   transform: ${props => props.$isExpanded ? 'rotate(0deg)' : 'rotate(0deg)'};
-`;
-
-const ShuttleContent = styled.div`
-  padding: 1rem 1.5rem 1.5rem;
 `;
 
 export default VenueSection; 
