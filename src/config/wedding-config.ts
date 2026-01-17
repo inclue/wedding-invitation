@@ -51,8 +51,8 @@ export const weddingConfig = {
     tel: "02-564-5757",
     naverMapId: "상록아트홀", // 네이버 지도 검색용 장소명
     coordinates: {
-      latitude: 37.5665,
-      longitude: 126.9780,
+      latitude: 37.5038913,
+      longitude: 127.0429552,
     },
     placeId: "366784007", // 네이버 지도 장소 ID
     mapZoom: "17", // 지도 줌 레벨
