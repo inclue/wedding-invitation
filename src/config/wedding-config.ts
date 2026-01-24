@@ -15,7 +15,7 @@ export const weddingConfig = {
   meta: {
     title: "박인서 ❤️ 여희원의 결혼식에 초대합니다",
     description: "결혼식 초대장",
-    ogImage: "/images/ha0h-1fsi-bqt3.jpg",
+    ogImage: "https://thumb2.photo.mybox.naver.com/3472598564788833612?type=m1280_1280_2A",
     noIndex: true,
     _jwk_watermark_id: uniqueIdentifier,
   },
