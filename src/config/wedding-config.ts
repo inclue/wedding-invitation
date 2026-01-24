@@ -23,7 +23,7 @@ export const weddingConfig = {
   // 메인 화면
   main: {
     title: "Happy Wedding Day",
-    image: "/images/ha0h-1fsi-bqt3.jpg",
+    image: "https://thumb2.photo.mybox.naver.com/3472598564788833612?type=m1280_1280_2",
     date: "2026년 6월 7일 일요일 오후 3시 10분",
     venue: "상록아트홀 5층"
   },
