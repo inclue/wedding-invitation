@@ -113,15 +113,7 @@ const VenueSection = ({ bgColor = 'white' }: VenueSectionProps) => {
           position: venueLocation,
           map: map
         });
-        
-        // 인포윈도우 생성
-        const infoWindow = new window.naver.maps.InfoWindow({
-          content: `<div style="padding:10px;min-width:150px;text-align:center;font-size:14px;"><strong>${weddingConfig.venue.name}</strong></div>`
-        });
-        
-        // 마커 클릭 시 인포윈도우 표시
-        infoWindow.open(map, marker);
-        
+
         // 지도 중심 이동
         map.setCenter(venueLocation);
         console.log('네이버 지도 초기화 완료');
