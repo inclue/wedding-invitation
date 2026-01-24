@@ -15,7 +15,7 @@ export const weddingConfig = {
   meta: {
     title: "박인서 ❤️ 여희원의 결혼식에 초대합니다",
     description: "결혼식 초대장",
-    ogImage: "https://thumb2.photo.mybox.naver.com/3472598564788833612?type=m1280_1280_2A",
+    ogImage: "https://thumb2.photo.mybox.naver.com/3472598564788833612?type=m1280_1280_2",
     noIndex: true,
     _jwk_watermark_id: uniqueIdentifier,
   },
@@ -68,15 +68,15 @@ export const weddingConfig = {
     layout: "grid" as GalleryLayout, // "scroll" 또는 "grid" 선택
     position: "middle" as GalleryPosition, // "middle" (현재 위치) 또는 "bottom" (맨 하단) 선택
     images: [
-      "/images/gallery/image1.jpg",
-      "/images/gallery/image2.jpg",
-      "/images/gallery/image3.jpg",
-      "/images/gallery/image4.jpg",
-      "/images/gallery/image5.jpg",
-      "/images/gallery/image6.jpg",
-      "/images/gallery/image7.jpg",
-      "/images/gallery/image8.jpg",
-      "/images/gallery/image9.jpg",
+      "https://thumb2.photo.mybox.naver.com/3472598564788770892?type=m1280_1280_2",
+      "https://thumb2.photo.mybox.naver.com/3472598564788768588?type=m1280_1280_2",
+      "https://thumb2.photo.mybox.naver.com/3472598564788768076?type=m1280_1280_2",
+      "https://thumb2.photo.mybox.naver.com/3472598564788765004?type=m1280_1280_2",
+      "https://thumb2.photo.mybox.naver.com/3472598564788686412?type=m1280_1280_2",
+      "https://thumb2.photo.mybox.naver.com/3472598564788686156?type=m1280_1280_2",
+      "https://thumb2.photo.mybox.naver.com/3472598564788685900?type=m1280_1280_2",
+      "https://thumb2.photo.mybox.naver.com/3472598564788622412?type=m1280_1280_2",
+      "https://thumb2.photo.mybox.naver.com/3472598564788622156?type=m1280_1280_2",
     ],
   } as GalleryConfig,
 
