@@ -15,7 +15,7 @@ export const weddingConfig = {
   meta: {
     title: "박인서 ❤️ 여희원의 결혼식에 초대합니다",
     description: "결혼식 초대장",
-    ogImage: "/images/ha0h-1fsi-bqt3.jpg",
+    ogImage: mainImageUrl,
     noIndex: true,
     _jwk_watermark_id: uniqueIdentifier,
   },
@@ -23,7 +23,7 @@ export const weddingConfig = {
   // 메인 화면
   main: {
     title: "Happy Wedding Day",
-    image: "/images/ha0h-1fsi-bqt3.jpg",
+    image: mainImageUrl,
     date: "2026년 6월 7일 일요일 오후 3시 10분",
     venue: "상록아트홀 5층"
   },
