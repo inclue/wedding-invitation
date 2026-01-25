@@ -1,4 +1,5 @@
 const uniqueIdentifier = "JWK-WEDDING-TEMPLATE-V1";
+const mainImageUrl = "https://kr.object.ncloudstorage.com/wedding-image/main_image.jpg";
 
 // 갤러리 레이아웃 타입 정의
 type GalleryLayout = "scroll" | "grid";
@@ -68,15 +69,15 @@ export const weddingConfig = {
     layout: "grid" as GalleryLayout, // "scroll" 또는 "grid" 선택
     position: "middle" as GalleryPosition, // "middle" (현재 위치) 또는 "bottom" (맨 하단) 선택
     images: [
-      "/images/gallery/image1.jpg",
-      "/images/gallery/image2.jpg",
-      "/images/gallery/image3.jpg",
-      "/images/gallery/image4.jpg",
-      "/images/gallery/image5.jpg",
-      "/images/gallery/image6.jpg",
-      "/images/gallery/image7.jpg",
-      "/images/gallery/image8.jpg",
-      "/images/gallery/image9.jpg",
+      "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_1.jpg",
+      "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_2.jpg",
+      "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_3.jpg",
+      "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_4.jpg",
+      "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_5.jpg",
+      "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_6.jpg",
+      "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_7.jpg",
+      "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_8.jpg",
+      "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_9.jpg",
     ],
   } as GalleryConfig,
 
