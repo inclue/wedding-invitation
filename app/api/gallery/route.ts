@@ -5,6 +5,8 @@ import { weddingConfig } from '../../../src/config/wedding-config';
 
 export async function GET() {
   try {
+    const isRemoteUrl = (url: string) => url.startsWith('http://') || url.startsWith('https://') || url.startsWith('//');
+    
     // 갤러리 폴더 경로
     const galleryDir = path.join(process.cwd(), 'public/images/gallery');
     
@@ -24,19 +26,23 @@ export async function GET() {
     
     // config에 설정된 순서대로 존재하는 이미지만 추가
     for (const configImagePath of configImages) {
+      // 외부 URL은 존재 여부 확인 없이 그대로 사용
+      if (isRemoteUrl(configImagePath)) {
+        orderedImages.push(configImagePath);
+        continue;
+      }
+      
       const filename = path.basename(configImagePath);
       if (imageFiles.includes(filename)) {
-        orderedImages.push(configImagePath);
+        // 로컬 파일은 정규화된 경로로 반환
+        orderedImages.push(configImagePath.startsWith('/images/gallery/')
+          ? configImagePath
+          : `/images/gallery/${filename}`);
       }
     }
     
-    // config에 없지만 폴더에 존재하는 이미지들을 마지막에 추가 (파일명 순으로 정렬)
-    const remainingFiles = imageFiles
-      .filter(file => !configImages.some((configPath: string) => path.basename(configPath) === file))
-      .sort((a, b) => a.localeCompare(b))
-      .map(file => `/images/gallery/${file}`);
-    
-    const finalImages = [...orderedImages, ...remainingFiles];
+    // 현재 요구사항: config에 정의된 이미지들만 응답으로 사용
+    const finalImages = [...orderedImages];
     
     return NextResponse.json({ images: finalImages });
   } catch (error) {
