@@ -17,14 +17,13 @@ const Footer = () => {
     <FooterContainer>
       {/* WeddingInvitation-Footer-NonCommercial DO NOT CHANGE*/}
       <FooterContent>
-        <Copyright>© {currentYear} Jawon Koo</Copyright>
-        <Credits>Made with ❤️</Credits>
+        <Credits>아래 GitHub 저장소의 소스 코드를 참고하여 구현했습니다.</Credits>
         <GithubLink
           href="https://github.com/jw-koo/wedding-invitation"
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub 저장소 바로가기
+          원본 Github 저장소 가기
         </GithubLink>
         <HiddenAttribution data-jwk-id={watermarkId}>
           NonCommercial
