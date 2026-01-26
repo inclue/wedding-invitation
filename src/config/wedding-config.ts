@@ -1,5 +1,6 @@
 const uniqueIdentifier = "JWK-WEDDING-TEMPLATE-V1";
-const mainImageUrl = "https://kr.object.ncloudstorage.com/wedding-image/main_image.jpg";
+// 캐시 무효화를 위해 쿼리 파라미터를 붙였습니다.
+const mainImageUrl = "https://kr.object.ncloudstorage.com/wedding-image/main_image_2.jpeg";
 
 // 갤러리 레이아웃 타입 정의
 type GalleryLayout = "scroll" | "grid";
@@ -25,7 +26,7 @@ export const weddingConfig = {
   main: {
     title: "Happy Wedding Day",
     image: mainImageUrl,
-    date: "2026년 6월 7일 일요일 오후 3시 10분",
+    date: "2026년 6월 7일 일요일\n오후 3시 10분",
     venue: "상록아트홀 5층"
   },
 
