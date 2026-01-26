@@ -173,7 +173,7 @@ const MainTitle = styled.h1`
 `;
 
 const DateText = styled.p`
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
   
   /* 기본 크기에서 세로 길이가 짧을 때 */
@@ -185,7 +185,7 @@ const DateText = styled.p`
   }
   
   @media (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     min-height: 0.3rem;
   }
   
@@ -198,7 +198,7 @@ const DateText = styled.p`
   }
   
   @media (max-width: 450px) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 0.15rem;
   }
   
@@ -211,7 +211,7 @@ const DateText = styled.p`
   }
   
   @media (max-width: 360px) {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 0.1rem;
   }
   
@@ -224,7 +224,7 @@ const DateText = styled.p`
   }
   
   @media (max-width: 295px) {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 0.05rem;
   }
   
@@ -238,18 +238,18 @@ const DateText = styled.p`
 `;
 
 const VenueText = styled.p`
-  font-size: 1rem;
+  font-size: 1.2rem;
   @media (max-width: 768px) {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
   @media (max-width: 450px) {
-    font-size: 0.9rem;
+    font-size: 1.05rem;
   }
   @media (max-width: 360px) {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
   @media (max-width: 295px) {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 `;
 
