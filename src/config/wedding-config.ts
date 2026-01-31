@@ -1,6 +1,4 @@
 const uniqueIdentifier = "JWK-WEDDING-TEMPLATE-V1";
-// 캐시 무효화를 위해 쿼리 파라미터를 붙였습니다.
-const mainImageUrl = "https://kr.object.ncloudstorage.com/wedding-image/main_image.jpg";
 
 // 갤러리 레이아웃 타입 정의
 type GalleryLayout = "scroll" | "grid";
@@ -17,7 +15,7 @@ export const weddingConfig = {
   meta: {
     title: "박인서 ❤️ 여희원 결혼합니다",
     description: "2026/06/07(일) 15:10 상록아트홀",
-    ogImage: mainImageUrl,
+    ogImage: "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_6.jpg",
     noIndex: true,
     _jwk_watermark_id: uniqueIdentifier,
   },
@@ -25,7 +23,7 @@ export const weddingConfig = {
   // 메인 화면
   main: {
     title: "Happy Wedding Day",
-    image: mainImageUrl,
+    image: "https://kr.object.ncloudstorage.com/wedding-image/main_image.jpg",
     date: "2026년 6월 7일 일요일\n오후 3시 10분",
     venue: "상록아트홀 5층"
   },
