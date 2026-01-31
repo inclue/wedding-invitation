@@ -70,7 +70,6 @@ const AccountSection = ({ bgColor = 'white' }: AccountSectionProps) => {
   const shareWebsite = async () => {
     const shareData = {
       title: weddingConfig.meta.title,
-      text: `${weddingConfig.invitation.groom.name} ♥ ${weddingConfig.invitation.bride.name}의 결혼식에 초대합니다`,
       url: window.location.href,
     };
     
