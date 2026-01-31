@@ -100,34 +100,24 @@ export const weddingConfig = {
   // 계좌번호
   account: {
     groom: {
-      bank: "은행명",
-      number: "123-456-789012",
+      bank: "카카오뱅크",
+      number: "3333-02-3260370",
       holder: "박인서",
     },
     bride: {
-      bank: "은행명",
-      number: "987-654-321098",
+      bank: "우리은행",
+      number: "473-08-052409",
       holder: "여희원",
     },
-    groomFather: {
-      bank: "은행명",
-      number: "111-222-333444",
+    groomParents: {
+      bank: "국민은행",
+      number: "729202-01-063006",
       holder: "박승윤",
     },
-    groomMother: {
-      bank: "은행명",
-      number: "555-666-777888",
-      holder: "김미경",
-    },
-    brideFather: {
-      bank: "은행명",
-      number: "999-000-111222",
+    brideParents: {
+      bank: "우리은행",
+      number: "422-07-003863",
       holder: "여명석",
-    },
-    brideMother: {
-      bank: "은행명",
-      number: "333-444-555666",
-      holder: "김명주",
     }
   },
 

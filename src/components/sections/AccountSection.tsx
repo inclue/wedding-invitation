@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { weddingConfig } from '../../config/wedding-config';
 import { AccountInfo } from '../../types/wedding';
 
-type AccountPerson = 'groom' | 'bride' | 'groomFather' | 'groomMother' | 'brideFather' | 'brideMother';
+type AccountPerson = 'groom' | 'bride' | 'groomParents' | 'brideParents';
 type AccountSide = 'groom' | 'bride';
 
 interface AccountSectionProps {
@@ -16,10 +16,8 @@ const AccountSection = ({ bgColor = 'white' }: AccountSectionProps) => {
   const [copyStatus, setCopyStatus] = useState<Record<AccountPerson, boolean>>({
     groom: false,
     bride: false,
-    groomFather: false,
-    groomMother: false,
-    brideFather: false,
-    brideMother: false,
+    groomParents: false,
+    brideParents: false,
   });
   
   // URL 복사 상태 관리
@@ -93,14 +91,10 @@ const AccountSection = ({ bgColor = 'white' }: AccountSectionProps) => {
         return weddingConfig.invitation.groom.name;
       case 'bride':
         return weddingConfig.invitation.bride.name;
-      case 'groomFather':
-        return weddingConfig.invitation.groom.father;
-      case 'groomMother':
-        return weddingConfig.invitation.groom.mother;
-      case 'brideFather':
-        return weddingConfig.invitation.bride.father;
-      case 'brideMother':
-        return weddingConfig.invitation.bride.mother;
+      case 'groomParents':
+        return `${weddingConfig.invitation.groom.father} · ${weddingConfig.invitation.groom.mother}`;
+      case 'brideParents':
+        return `${weddingConfig.invitation.bride.father} · ${weddingConfig.invitation.bride.mother}`;
       default:
         return '';
     }
@@ -159,8 +153,7 @@ const AccountSection = ({ bgColor = 'white' }: AccountSectionProps) => {
           {expandedSide === 'groom' && (
             <AccountRowsContainer>
               {renderAccountRow(weddingConfig.account.groom, 'groom', '신랑')}
-              {renderAccountRow(weddingConfig.account.groomFather, 'groomFather', '아버지')}
-              {renderAccountRow(weddingConfig.account.groomMother, 'groomMother', '어머니')}
+              {renderAccountRow(weddingConfig.account.groomParents, 'groomParents', '부모님')}
             </AccountRowsContainer>
           )}
         </AccountCard>
@@ -177,8 +170,7 @@ const AccountSection = ({ bgColor = 'white' }: AccountSectionProps) => {
           {expandedSide === 'bride' && (
             <AccountRowsContainer>
               {renderAccountRow(weddingConfig.account.bride, 'bride', '신부')}
-              {renderAccountRow(weddingConfig.account.brideFather, 'brideFather', '아버지')}
-              {renderAccountRow(weddingConfig.account.brideMother, 'brideMother', '어머니')}
+              {renderAccountRow(weddingConfig.account.brideParents, 'brideParents', '부모님')}
             </AccountRowsContainer>
           )}
         </AccountCard>
