@@ -7,10 +7,8 @@ export interface AccountInfo {
 export interface WeddingAccountConfig {
   groom: AccountInfo;
   bride: AccountInfo;
-  groomFather: AccountInfo;
-  groomMother: AccountInfo;
-  brideFather: AccountInfo;
-  brideMother: AccountInfo;
+  groomParents: AccountInfo;
+  brideParents: AccountInfo;
 }
 
 export interface ShuttleContact {
