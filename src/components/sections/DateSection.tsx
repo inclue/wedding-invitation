@@ -94,6 +94,8 @@ const DateSection = ({ bgColor = 'white' }: DateSectionProps) => {
     return () => clearInterval(timer);
   }, []);
 
+  const dateLines = weddingConfig.main.date.split('\n');
+
   return (
     <DateSectionContainer $bgColor={bgColor}>
       <SectionTitle>일정</SectionTitle>
@@ -155,7 +157,12 @@ const DateSection = ({ bgColor = 'white' }: DateSectionProps) => {
       )}
       
       <WeddingDate>
-        {weddingConfig.main.date}
+        {dateLines.map((line, index) => (
+          <React.Fragment key={index}>
+            {line}
+            {index !== dateLines.length - 1 && <br />}
+          </React.Fragment>
+        ))}
       </WeddingDate>
     </DateSectionContainer>
   );

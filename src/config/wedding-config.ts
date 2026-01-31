@@ -49,7 +49,7 @@ export const weddingConfig = {
   // 장소 정보
   venue: {
     name: "상록아트홀 5F 아트홀",
-    address: "서울특별시 강남구 언주로 508 (역삼동 701번지)",
+    address: "서울특별시 강남구 언주로 508\n(역삼동 701번지)",
     tel: "02-564-5757",
     naverMapId: "상록아트홀", // 네이버 지도 검색용 장소명
     coordinates: {
