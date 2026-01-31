@@ -1,6 +1,6 @@
 const uniqueIdentifier = "JWK-WEDDING-TEMPLATE-V1";
 // 캐시 무효화를 위해 쿼리 파라미터를 붙였습니다.
-const mainImageUrl = "https://kr.object.ncloudstorage.com/wedding-image/main_image_2.jpeg";
+const mainImageUrl = "https://kr.object.ncloudstorage.com/wedding-image/main_image.jpg";
 
 // 갤러리 레이아웃 타입 정의
 type GalleryLayout = "scroll" | "grid";
