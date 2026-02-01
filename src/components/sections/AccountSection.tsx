@@ -179,7 +179,7 @@ const AccountSection = ({ bgColor = 'white' }: AccountSectionProps) => {
       {/* 청첩장 공유하기 버튼 */}
       <ShareContainer>
         <ShareButton onClick={copyWebsiteUrl}>
-          {urlCopied ? '복사 완료!' : 'URL 복사하기'}
+          {urlCopied ? '복사 완료!' : 'URL 복사'}
         </ShareButton>
         <ShareButton onClick={shareWebsite} $isShare={true}>
           공유하기
