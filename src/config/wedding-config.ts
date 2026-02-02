@@ -83,6 +83,9 @@ export const weddingConfig = {
       "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_13.jpg",
       "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_14.jpg",
       "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_15.jpg",
+      "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_16.jpg",
+      "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_17.jpg",
+      "https://kr.object.ncloudstorage.com/wedding-image/gallery_image_18.jpg",
     ],
   } as GalleryConfig,
 
