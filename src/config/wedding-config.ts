@@ -15,7 +15,7 @@ export const weddingConfig = {
   meta: {
     title: "박인서 ❤️ 여희원 결혼합니다",
     description: "2026/06/07(일) 15:10 상록아트홀",
-    ogImage: "https://kr.object.ncloudstorage.com/wedding-image/og_image.png",
+    ogImage: "https://kr.object.ncloudstorage.com/wedding-image/og_image.jpg",
     noIndex: true,
     _jwk_watermark_id: uniqueIdentifier,
   },
